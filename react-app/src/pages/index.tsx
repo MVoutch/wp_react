@@ -9,7 +9,7 @@ interface Post {
 }
 
 export default function Home() {
-    const [posts, setPosts] = useState<Post[]>([]); // Use the Post type for state
+    const [posts, setPosts] = useState<Post[]>([]);
 
     useEffect(() => {
         const fetchPosts = async () => {
